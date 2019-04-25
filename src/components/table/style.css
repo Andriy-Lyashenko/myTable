@@ -1,0 +1,80 @@
+
+/* Row count hover,COunt by sites */
+.row_hover_count{
+    position: relative;
+    cursor: pointer;
+}
+.row_count_tooltip{
+    position: absolute;
+    z-index: 100;
+    top: -57px;
+    left: -160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+.row_hover_count:hover .row_count_tooltip{
+    animation: show_tooltip  0.3s;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s; 
+}
+
+/* Count By dates */
+
+.row_hover_count_date{
+    position: relative;
+    cursor: pointer;
+}
+
+.row_count_tooltip_date{
+    position: absolute;
+    z-index: 100;
+    top: -57px;
+    left: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.row_hover_count_date:hover .row_count_tooltip_date{
+    animation: show_tooltip  0.3s;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s; 
+}
+
+
+
+
+/* Message tooltip */
+
+.row_message_tooltip{
+    height: 20px;
+    z-index: 100;
+    position: absolute;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 7px 15px;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 1s; /*Скорость перехода состояния элемента*/
+    top: 30px;
+    left: 150px;
+    
+
+}
+
+.row_message_hover{
+    position: relative;
+    cursor: pointer;
+    transition: 2s linear;
+}
+.row_message_hover:hover .row_message_tooltip{
+    opacity:1;
+	transition: 1.5s;
+}
+
